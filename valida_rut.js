@@ -1,7 +1,7 @@
 var Fn = {
 	// Valida el rut con su cadena completa "XXXXXXXX-X"
 	validaRut : function (rutCompleto) {
-		if (!/^[0-9]+-[0-9kK]{1}$/.test( rutCompleto ))
+		if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto ))
 			return false;
 		var tmp 	= rutCompleto.split('-');
 		var digv	= tmp[1]; 
